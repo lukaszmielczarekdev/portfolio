@@ -1,0 +1,78 @@
+:root {
+  --clr-primary-000: transparent;
+  --clr-primary-100: #ffffffc2;
+  --clr-primary-200: #27c7f3;
+  --clr-primary-500: #676e75;
+  --clr-primary-900: black;
+
+  --clr-nautral-100: white;
+  --clr-nautral-200: #f5f5f5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* general */
+
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    min-width: 320px;
+  }
+}
+
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  margin-inline: auto;
+  width: min(100%, 70rem);
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    margin-inline: auto;
+    width: min(90%, 70rem);
+  }
+}
+
+/* background */
+
+.bg-white {
+  color: var(--clr-primary-900);
+  background-color: var(--clr-nautral-100);
+}
+.bg-light {
+  color: var(--clr-primary-500);
+  background-color: var(--clr-nautral-200);
+}
+.bg-transparent {
+  color: var(--clr-nautral-100);
+  background-color: transparent;
+}
+
+/* layout */
+
+.split {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 1400px) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+}
