@@ -72,17 +72,6 @@ h3 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 420px) {
-  html {
-    font-size: 110%;
-  }
-}
-@media screen and (min-width: 2200px) {
-  html {
-    font-size: 150%;
-  }
-}
-
 #footer {
   font-family: var(--ff-primary);
   font-size: 1rem;
@@ -144,6 +133,28 @@ h3 {
   text-align: center;
   z-index: 1;
   min-height: 100vh;
+}
+
+/* header */
+
+#header > h2 {
+  border: 3px solid var(--clr-nautral-100);
+  display: inline-block;
+  padding-inline: 1rem;
+}
+
+/* visibility modifiers */
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 1000ms, opacity 1000ms;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 2000s linear 0s, opacity 1000ms;
 }
 
 /* arrow link*/
