@@ -97,6 +97,15 @@ h3 {
   vertical-align: 0 !important;
 }
 
+#copyright {
+  color: var(--clr-primary-100);
+  font-family: var(--ff-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  line-height: 1.5;
+}
+
 .button {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
@@ -266,4 +275,44 @@ a.image {
   text-decoration: none;
   color: var(--clr-primary-200) !important;
   color: inherit;
+}
+
+/* copyright */
+
+#copyright {
+  color: var(--clr-primary-100);
+  position: relative;
+  cursor: default;
+  font-family: var(--ff-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 4rem auto 5rem auto;
+  width: calc(100% - 4rem);
+  max-width: 72rem;
+  z-index: 2;
+}
+
+#copyright a {
+  color: var(--clr-nautral-100);
+  color: inherit;
+}
+
+#copyright a:hover {
+  text-decoration: none;
+  color: var(--clr-primary-200) !important;
+}
+
+#copyright ul {
+  margin: 0;
+  padding-left: 0;
+}
+#copyright ul li {
+  border-left: 0;
+  margin: 1rem 0 0 0;
+  padding-left: 0;
+  display: block;
 }
