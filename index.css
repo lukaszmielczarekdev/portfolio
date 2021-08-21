@@ -57,11 +57,15 @@ h1 + p {
   font-size: 2rem;
 }
 
+#main-intro {
+  padding-bottom: 0;
+}
+
 #nav {
   font-family: var(--ff-primary);
   font-size: 1rem;
   font-weight: 600;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
@@ -76,7 +80,7 @@ h3 {
   font-family: var(--ff-primary);
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1rem;
   text-align: center;
 }
 
@@ -91,7 +95,7 @@ h3 {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1rem;
   line-height: 1.5;
 }
 
@@ -99,7 +103,7 @@ h3 {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
   font-weight: 900;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1rem;
   line-height: 3rem;
 }
 
@@ -194,19 +198,69 @@ h3 {
   }
 }
 
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1 {
+  display: inline-block;
+}
+
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+header,
+section {
+  padding: 3rem 0;
+}
+
+.flex {
+  display: flex;
+}
+.flex * {
+  padding: 0.25rem;
+}
+
+.padding-4rem {
+  padding: 4rem;
+}
+
+.margin-inline-1rem {
+  margin-inline: 0.5rem;
+}
+
+.border {
+  border: 1px solid #eeee;
+}
+
+.border-top {
+  border-top: 1px solid #eeee;
+}
+
+#main-intro + section + section {
+  padding: 0;
+}
+
 body {
   background: url(../images/bg.jpg) no-repeat center center fixed;
   background-size: cover;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media screen and (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
 }
 
 .container {
@@ -218,16 +272,32 @@ html {
   width: min(100%, 70rem);
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1280px) {
   .container {
     margin-inline: auto;
     width: min(90%, 70rem);
   }
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   filter: invert(59%) sepia(97%) saturate(1189%) hue-rotate(159deg)
     brightness(104%) contrast(91%);
+}
+
+/* scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* background */
@@ -367,11 +437,13 @@ a.image {
 
 /* footer */
 
-#footer section {
+#footer > section {
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 #footer p {
@@ -397,7 +469,7 @@ a.image {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.1rem;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
