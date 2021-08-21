@@ -118,6 +118,47 @@ h3 {
   text-align: center;
 }
 
+/* intro */
+
+#intro {
+  color: var(--clr-nautral-100);
+  padding: 8rem 4rem 0 4rem;
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -moz-justify-content: -moz-flex-end;
+  -webkit-justify-content: -webkit-flex-end;
+  -ms-justify-content: -ms-flex-end;
+  justify-content: flex-end;
+  position: relative;
+  cursor: default;
+  text-align: center;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* arrow link*/
+
+.arrow {
+  padding-top: 3rem;
+  display: inline-block;
+  padding-inline: 1rem;
+}
+
+.arrow:hover {
+  filter: invert(59%) sepia(97%) saturate(1189%) hue-rotate(159deg)
+    brightness(104%) contrast(91%);
+}
+
 /* general */
 
 @media screen and (max-width: 480px) {
