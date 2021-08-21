@@ -157,6 +157,26 @@ body {
   }
 }
 
+/* nav */
+
+#nav {
+  color: var(--clr-primary-100);
+  background-color: rgba(255, 255, 255, 0.175);
+  position: relative;
+  cursor: default;
+  border-bottom-color: inherit;
+  padding: 1rem;
+}
+#nav a {
+  color: inherit;
+}
+
+#nav a:hover {
+  text-decoration: none;
+  color: var(--clr-primary-200) !important;
+  color: inherit;
+}
+
 /* Image */
 
 .image {
