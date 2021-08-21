@@ -43,6 +43,9 @@ bower_components
 .sass-cache
 connect.lock
 typings
+.DS_Store
+LICENSE
+README.md
 
 # Logs
 logs

@@ -91,6 +91,12 @@ h3 {
   text-align: center;
 }
 
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: 0 !important;
+}
+
 .button {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
