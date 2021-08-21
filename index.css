@@ -83,6 +83,14 @@ h3 {
   }
 }
 
+#footer {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
 .button {
   font-family: var(--ff-primary);
   font-size: 0.8rem;
@@ -229,4 +237,27 @@ body {
 
 a.image {
   overflow: hidden;
+}
+
+/* footer */
+
+#footer section {
+  -moz-align-items: center;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+#footer p {
+  margin-bottom: 0;
+}
+
+#footer a {
+  color: inherit;
+}
+
+#footer a:hover {
+  text-decoration: none;
+  color: var(--clr-primary-200) !important;
+  color: inherit;
 }
