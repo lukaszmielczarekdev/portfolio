@@ -107,6 +107,17 @@ h3 {
   text-align: center;
 }
 
+@media screen and (min-width: 420px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 150%;
+  }
+}
+
 /* intro */
 
 #intro {
