@@ -156,3 +156,57 @@ body {
     flex-basis: 100%;
   }
 }
+
+/* Image */
+
+.image {
+  border: 0;
+  display: inline-block;
+  position: relative;
+}
+
+.image img {
+  display: block;
+}
+
+.image.fit {
+  display: block;
+  margin: 2.5rem 0;
+  width: 100%;
+}
+
+.image.fit:first-child {
+  margin-top: 0;
+}
+
+.image.fit img {
+  width: 100%;
+}
+
+.image.main {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.image.main:first-child {
+  margin-top: 0;
+}
+
+.image.main img {
+  width: 100%;
+}
+
+@media screen and (max-width: 736px) {
+  .image.fit {
+    margin: 2rem 0;
+  }
+
+  .image.main {
+    margin: 2rem 0;
+  }
+}
+
+a.image {
+  overflow: hidden;
+}
