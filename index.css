@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,700,900");
+
 :root {
   --clr-primary-000: transparent;
   --clr-primary-100: #ffffffc2;
@@ -7,12 +9,90 @@
 
   --clr-nautral-100: white;
   --clr-nautral-200: #f5f5f5;
+
+  --ff-primary: "Source Sans Pro", Helvetica, sans-serif;
+  --ff-secondary: "Source Sans Pro", Arial, sans-serif;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+/* typography */
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: var(--ff-secondary);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+}
+
+h1 + p {
+  font-size: 2rem;
+}
+
+#header > h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+}
+
+#main-intro > h2 {
+  font-size: 2rem;
+}
+
+#nav {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.075em;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 420px) {
+  html {
+    font-size: 110%;
+  }
+}
+@media screen and (min-width: 2200px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+.button {
+  font-family: var(--ff-primary);
+  font-size: 0.8rem;
+  font-weight: 900;
+  letter-spacing: 0.075em;
+  line-height: 3rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* general */
