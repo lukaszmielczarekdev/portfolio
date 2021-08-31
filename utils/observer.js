@@ -5,7 +5,7 @@ const username = document.querySelector("#username");
 const usernameOptions = {
   root: null,
   threshold: 0,
-  rootMargin: "-200px",
+  rootMargin: "-100px",
 };
 
 const fadeIn = () => {
