@@ -241,13 +241,18 @@ p {
   h2,
   p {
     margin-bottom: 1rem;
+    margin-top: 1rem;
     padding: 0;
   }
 }
 
 img {
-  display: block;
   max-width: 100%;
+  transition: transform 0.2s;
+}
+
+img:hover {
+  transform: scale(1.05);
 }
 
 ol,
@@ -281,7 +286,7 @@ section {
 
 @media screen and (min-width: 420px) {
   .padding-posts {
-    padding: 4rem;
+    padding: 2rem;
   }
 }
 
@@ -299,11 +304,6 @@ section {
 
 #main-intro + section + section {
   padding: 0;
-}
-
-body {
-  background: url(../images/bg.jpg) no-repeat center center fixed;
-  background-size: cover;
 }
 
 .container {
@@ -326,7 +326,7 @@ a {
   color: inherit;
 }
 
-a:hover {
+.button:hover {
   filter: invert(59%) sepia(97%) saturate(1189%) hue-rotate(159deg)
     brightness(104%) contrast(91%);
 }
@@ -544,4 +544,55 @@ a.image {
   margin: 1rem 0 0 0;
   padding-left: 0;
   display: block;
+}
+
+/* background */
+@media screen and (min-width: 1281px) {
+  .no-webp .bg {
+    background: url(/images/background/background-1920.jpg);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .webp .bg {
+    background: url(/images/background/background-1920.webp);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .no-webp .bg {
+    background: url(/images/background/background-1280.jpg);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .webp .bg {
+    background: url(/images/background/background-1280.webp);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .no-webp .bg {
+    background: url(/images/background/background-960.jpg);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .webp .bg {
+    background: url(/images/background/background-960.webp);
+    overflow: scroll;
+    max-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

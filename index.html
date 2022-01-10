@@ -10,7 +10,7 @@
   </head>
   <body>
     <!-- wrapper -->
-    <div id="wrapper">
+    <div id="wrapper" class="bg">
       <!-- intro -->
       <div id="intro" class="bg-transparent text-center container padding">
         <article id="introArticle" class="visible">
@@ -60,20 +60,74 @@
           <article class="padding-posts border-top">
             <h2>
               <a href="https://rocket-english.pages.dev" target="_blank"
-                >Rocket English (Work in progress...)<br />
+                >Rocket English<br />
               </a>
             </h2>
             <a href="https://rocket-english.pages.dev" target="_blank"
-              ><img
-                class="image main"
-                src="images/rocket_english_thumbnail.png"
-                alt="A flying space rocket against the background of the starry sky and clouds"
-            /></a>
+              ><picture className="image fit main">
+                <source
+                  type="image/webp"
+                  media="(min-width: 2560px)"
+                  srcset="./images/ri/ri-thumbnail-1280.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width:
+                2560px)"
+                  srcset="./images/ri/ri-thumbnail-1280.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+                2560px)"
+                  srcset="./images/ri/ri-thumbnail-1280.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+                2560px)"
+                  srcset="./images/ri/ri-thumbnail-1280.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+                960px)"
+                  srcset="./images/ri/ri-thumbnail-640.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+                960px)"
+                  srcset="./images/ri/ri-thumbnail-640.jpg"
+                  .default
+                />
+                <img
+                  alt=""
+                  src="./images/ri/ri-thumbnail-1280.jpg"
+                  type="image/jpg"
+                /> </picture
+            ></a>
             <p class="align-center">
-              Rocket English is a game of guessing definitions based on English
-              words. The user earns points for which he receives levels,
-              trophies and bonuses that help to achieve better results.<br />(React.js)
+              The application uses a gamification system to activate and
+              motivate the user to learn English. The main assumption of the
+              project was to create an interesting space-themed game, containing
+              a mechanism of motivating and rewarding the player who, as a
+              reward for overcoming challenges, wins trophies and gets access to
+              the next levels of the game. The background for the game is a
+              fantastic story about the fate of a lost crew in a mysterious
+              galaxy, the fate of which the player learns gradually. Increasing
+              the player's progress in the game is closely related to overcoming
+              the language challenges. In addition to overcoming story
+              challenges, the game offers the user to create their own
+              challenges through its own test creation mechanism generated on
+              the basis of materials provided by the user.
             </p>
+            <p>(React.js) (External API)</p>
             <a
               href="https://github.com/lukaszmielczarekdev/rocket-english"
               target="_blank"
@@ -96,17 +150,61 @@
                 >What Year Is Now ?</a
               >
             </h2>
-            <a href="https://app-ci.spio-wyin.workers.dev/" target="_blank"
-              ><img
-                class="image fit main"
-                src="images/wyin_thumbnail.png"
-                alt="Colorful background with a clock on it with a timer that shows current time next to the description of the application."
-            /></a>
+            <a href="https://app-ci.spio-wyin.workers.dev/" target="_blank">
+              <picture className="image fit main">
+                <source
+                  type="image/webp"
+                  media="(min-width: 2560px)"
+                  srcset="./images/wyin/wyin-thumbnail-1280.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width:
+            2560px)"
+                  srcset="./images/wyin/wyin-thumbnail-1280.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+            2560px)"
+                  srcset="./images/wyin/wyin-thumbnail-640.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+            2560px)"
+                  srcset="./images/wyin/wyin-thumbnail-640.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+            960px)"
+                  srcset="./images/wyin/wyin-thumbnail-480.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+            960px)"
+                  srcset="./images/wyin/wyin-thumbnail-480.jpg"
+                  .default
+                />
+                <img
+                  alt="Colorful background with a clock on it with a timer that shows current time next to the description of the application."
+                  src="./images/wyin/wyin-thumbnail-1280.jpg"
+                  type="image/jpg"
+                /> </picture
+            ></a>
             <p class="align-center">
-              Bored ? This simple application will display interesting
-              historical events based on the current time. Lets you search for a
-              specific date or choose a random one.<br />(React.js)
+              Curious ? This simple application will display interesting
+              historical events based on the current time. Also lets you search
+              for a specific date or choose a random one.
             </p>
+            <p>(React.js) (External API)</p>
             <a
               href="https://gitlab.com/niemamemaila/wyin-fe-webapp"
               target="_blank"
@@ -121,18 +219,67 @@
             >
           </article>
           <article class="padding-posts border">
-            <h2><a href="#" target="_blank">My Portfolio</a></h2>
-            <a href="#" target="_blank"
-              ><img
-                class="image fit main"
-                src="images/portfolio_thumbnail.png"
-                alt="White logo on the background of the forest and the road seen from above"
-            /></a>
+            <h2>
+              <a href="https://lukasz-mielczarek.pages.dev/" target="_blank"
+                >My Portfolio</a
+              >
+            </h2>
+            <a href="https://lukasz-mielczarek.pages.dev/" target="_blank">
+              <picture className="image fit main">
+                <source
+                  type="image/webp"
+                  media="(min-width: 2560px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-1280.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(min-width:
+          2560px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-1280.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+          2560px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-640.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+          2560px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-640.jpg"
+                  .default
+                />
+                <source
+                  type="image/webp"
+                  media="(max-width:
+          960px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-480.webp"
+                  .default
+                />
+                <source
+                  type="image/jpg"
+                  media="(max-width:
+          960px)"
+                  srcset="./images/portfolio/portfolio-thumbnail-480.jpg"
+                  .default
+                />
+                <img
+                  alt="White logo on the background of the forest and the road seen from above."
+                  src="./images/portfolio/portfolio-thumbnail-1280.jpg"
+                  type="image/jpg"
+                /> </picture
+            ></a>
             <p class="align-center">
-              <br />A showcase of my projects and my abilities.<br /><br />(JavaScript)
+              A showcase of my projects and my abilities.<br /><br /><br />
             </p>
+            <p>(JavaScript)</p>
             <a
               href="https://github.com/lukaszmielczarekdev/portfolio"
+              target="_blank"
               class="button small margin-inline-1rem"
               >CODE</a
             >
@@ -182,6 +329,7 @@
         </ul>
       </div>
     </div>
+    <script src="./modernizr-custom.js"></script>
     <script src="./utils/observer.js"></script>
   </body>
 </html>
